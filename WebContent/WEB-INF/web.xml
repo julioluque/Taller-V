@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+<servlet>
+ 	<description></description>
+    <display-name>LoginController</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>mvc.tp.controller.LoginController</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+	<servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+</servlet-mapping>  
+  
+<servlet>
+	<display-name>jTable User</display-name>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>mvc.tp.controller.UserController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
+</servlet-mapping>  
+  
+
+<servlet>
+	<display-name>jTable Person</display-name>
+    <servlet-name>PersonController</servlet-name>
+    <servlet-class>mvc.tp.controller.PersonController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PersonController</servlet-name>
+    <url-pattern>/PersonController</url-pattern>
+</servlet-mapping>
+
+</web-app>
